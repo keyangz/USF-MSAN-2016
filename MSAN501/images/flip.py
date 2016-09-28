@@ -7,9 +7,8 @@ def flip(img):
     mat1 = img.load()
     mat2 = imgcopy.load()
     for i in range(height):
-        for j in range(width / 2):
+        for j in range(width):
             mat2[j, i] = mat1[width - j - 1, i]
-            mat2[width - j - 1, i] = mat1[j, i]
     return imgcopy
 
 
